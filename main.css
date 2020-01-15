@@ -1,0 +1,7 @@
+footer nav {
+  border-top: 1px solid gray;
+  color: gray; }
+  footer nav li:first-of-type {
+    font-weight: bold; }
+
+/*# sourceMappingURL=main.css.map */
