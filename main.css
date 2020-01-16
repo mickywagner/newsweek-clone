@@ -1,7 +1,43 @@
+.nav-item {
+  padding: 5px; }
+
 footer nav {
   border-top: 1px solid gray;
-  color: gray; }
+  font-size: .9em;
+  color: slategray; }
+  footer nav li {
+    padding: 8px;
+    font-weight: 300; }
   footer nav li:first-of-type {
-    font-weight: bold; }
+    font-weight: 600; }
+
+footer div h1 {
+  color: red; }
+footer div p {
+  text-transform: uppercase; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.card {
+  border: none; }
+
+section header h2 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 14px;
+  font-weight: 600; }
+
+.flex-row.card {
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+  .flex-row.card img {
+    max-height: 180px; }
+  .flex-row.card h3 {
+    font-size: 1rem;
+    font-weight: 600; }
+  .flex-row.card p {
+    font-size: .8rem; }
 
 /*# sourceMappingURL=main.css.map */

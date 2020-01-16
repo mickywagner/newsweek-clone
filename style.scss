@@ -1,1 +1,37 @@
+@import './scss/header.scss';
 @import './scss/footer.scss';
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border: none;
+}
+
+section header h2 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.flex-row.card {
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+        max-height: 180px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+}
