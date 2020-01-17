@@ -17,17 +17,24 @@
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   </head>
   <body>
-    <div class="container-fluid">
+    
       <header>
         <nav>
-          <ul class="nav navbar navbar-dark bg-dark">
+          <ul class="nav navbar">
             <li class="navbar-brand">Newsweek</li>
             <li class="nav-item">Sign-in</li>
-            <li class="nav-item btn">Subscribe</li>
+            <li class="nav-item">Subscribe</li>
+            <li class="nav-item"> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+            </li>
           </ul>
         </nav>
       </header>
 
+      <div class="container-fluid">
       <section id="top-story">
         <header>
           <h2>Top Story</h2>
@@ -180,14 +187,118 @@
             </div>
         </div>
 
+      </section>
+
+      <section id="featured-stories">
+          <header>
+              <h2>Featured Stories</h2>
+          </header>
+
+          <div class="card">
+              <div class="card-img">
+                  <img src="https://d.newsweek.com/en/full/1560961/iran-ali-khamenei-qassem-soleimani-protests-us.webp?w=767&h=512&q=90&f=f71bece1be6797eafd9e26ae7669a499">
+                  <span>News</span>
+              </div>
+              <div class="card-body pl-0">
+                  <h3>Iran's Supreme Leader Says Regime Will Learn From Recent 'Bitter' Events</h3>
+                  <p>Ayatollah Ali Khamenei told worshippers in Tehran on Friday that the strike against American targets in Iraq should be considered a "day of Allah."</p>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+                <img src="https://d.newsweek.com/en/full/1560958/boston-commons-winter-storm-december-2019.webp?w=767&h=512&q=90&f=bfa86c294a21837d9bf29aa443e9d551">
+                <span>News</span>
+            </div>
+            <div class="card-body pl-0">
+                <h3>Bomb Cyclone Developing Off New England Coast Into Canada</h3>
+                <p>A strong winter storm is expected to blast across the Plains, Midwest and northeast of the United States this weekend before strengthening into a bomb cyclone off the coast of New England.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="https://d.newsweek.com/en/full/1560933/donald-trump.webp?w=767&h=512&q=90&f=60e2dec4858b9c0db0014f1cbc1134b2">
+                <span>U.S.</span>
+            </div>
+            <div class="card-body pl-0">
+                <h3>Trump Snaps at CNN's Jim Acosta to Be 'Quiet' After Questions About Parnas</h3>
+                <p>President Donald Trump has maintained that he does not know Lev Parnas, despite being pictured in photos with him.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="https://d.newsweek.com/en/full/1560705/iran-flight-752-mh17-dutch-canada-investigation.webp?w=767&h=512&q=90&f=a0c1fe20030d779fac017e09ce40ff62">
+                <span>News</span>
+            </div>
+            <div class="card-body pl-0">
+                <h3>Iran Plane Probe Will Draw on Lessons Learned From MH17: Response Group</h3>
+                <p>Representatives for the multinational International Coordination and Response Group set out a five-point framework for cooperation with Iran to investigate the destruction of a passenger jet near Tehran last week.</p>
+            </div>
+        </div>
+
+      </section>
+
+      <section id="opinion">
+          <header>
+              <h2>Opinion</h2>
+          </header>
+
+          <div class="card flex-row">
+              <img src="https://d.newsweek.com/en/full/1561094/stephanie-mcnulty.webp?w=63&h=63&f=725d3ee50372bb29f37138e9dfef8935">
+              <div class="card-body">
+                  <h3>There's One Kind of Democracy That Is Booming Worldwide—Not Retreating</h3>
+                  <h4>BY STEPHANIE MCNULTY</h4>
+              </div>
+          </div>
+
+          <div class="card flex-row">
+            <img src="https://d.newsweek.com/en/full/1561108/judith-hazen-connery.webp?w=63&h=63&f=ef8df266875c400e33b070073b7bd41b">
+            <div class="card-body">
+                <h3>Trump Is Threatening America's Landmark Environmental Law to Allow for Backroom Deals</h3>
+                <h4>BY JUDITH HAZEN CONNERY</h4>
+            </div>
+        </div>
+
+        <div class="card flex-row">
+            <img src="https://d.newsweek.com/en/full/1561087/nathan-smith.webp?w=63&h=63&f=988f7ddb83cfbd5b5dc0ec56c478d977">
+            <div class="card-body">
+                <h3>I Sued Obama to Stop Him Sending Troops to War Without Asking Congress. I Failed. Trump Is Reaping the Reward</h3>
+                <h4>BY NATHAN SMITH</h4>
+            </div>
+        </div>
+
+        <div class="card flex-row">
+            <img src="https://d.newsweek.com/en/full/1504770/galip-dalay.webp?w=63&h=63&f=734ad635cb3c549508ad9d819d72eee9">
+            <div class="card-body">
+                <h3>Trump's Killing of Soleimani Will Continue to Shape the Middle East</h3>
+                <h4>BY GALIP DALAY
+                </h4>
+            </div>
+        </div>
+
+        <div class="card flex-row">
+            <img src="https://d.newsweek.com/en/full/1560999/yvette-clarke-michael-shank.webp?w=63&h=63&f=2afa02d79f6c3cdb7710f8e9cc4d42f7">
+            <div class="card-body">
+                <h3>BlackRock Is Smart to Prioritize the Climate—And Business Leaders Know It</h3>
+                <h4>BY YVETTE CLARKE AND MICHAEL SHANK
+                </h4>
+            </div>
+        </div>
+
+        <div class="card flex-row">
+            <img src="https://d.newsweek.com/en/full/1560799/jim-naureckas-julie-hollar.webp?w=63&h=63&f=e82ecfb698408cf108cbca368360a7fb">
+            <div class="card-body">
+                <h3>CNN Debate Blatantly Targeted Bernie Sanders and the Anti-Establishment</h3>
+                <h4>BY JIM NAURECKAS AND JULIE HOLLAR
+                </h4>
+            </div>
+        </div>
 
 
 
       </section>
-
-      <section id="featured-stories"></section>
-
-      <section id="opinion"></section>
 
       <section id="latest-news"></section>
 

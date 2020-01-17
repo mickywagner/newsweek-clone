@@ -1,13 +1,19 @@
 @import './scss/header.scss';
 @import './scss/footer.scss';
+@import './scss/culture.scss';
 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card {
-    border: none;
+section, footer {
+    position: relative;
+    top: 60px;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 section header h2 {
@@ -15,6 +21,11 @@ section header h2 {
     color: gray;
     font-size: 14px;
     font-weight: 600;
+}
+
+.card {
+    border: none;
+    
 }
 
 .flex-row.card {
@@ -29,10 +40,6 @@ section header h2 {
     h3 {
         font-size: 1rem;
         font-weight: 600;
-        &:hover {
-            text-decoration: underline;
-            text-decoration-color: red;
-        }
     }
 
     p {
@@ -40,31 +47,64 @@ section header h2 {
     }
 }
 
-#culture-travel {
-    background: rgba(245, 245, 245, 0.89);
-    
-    header h2 {
-       padding: 10px 0 0 10px;
-    }
+.card {
+    .card-img {
+        width: 100%;
+        position: relative;
 
-    .card {
-        background: rgba(245, 245, 245, 0.89);
-
-        h3 {
-            font-size: 1.5em;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        p {
-            color: gray;
+        img {
+            width: 100%;
+     
         }
 
         span {
-            background: #c3d4d8;
-            font-size: .9em;
-            font-weight: 100;
-            color: gray;
+            background: rgba(255,255,255, 0.6);
+            text-transform: uppercase;
+            padding: 5px 20px;
+            color: red;
+            position: absolute;
+            bottom: 0;
         }
+    }
+}
+
+#featured-stories {
+    h3 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
+
+#opinion {
+    .card {
+        justify-content: center;
+        border-top: none;
+        border-bottom: 1px solid gray;
+
+        img {
+            height: 63px;
+            min-width: 63px;
+            padding-right: 5px;
+        }
+        
+        .card-body {
+            padding-top: 0;
+            padding-bottom: 5px;
+
+            h3 {
+                font-size: 1em;
+                &:hover {
+                    color: red;
+                }
+            }
+            h4 {
+                font-size: .8em;
+            }
+        }
+    }
+
+    .card:last-child {
+        border: none;
     }
     
 }

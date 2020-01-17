@@ -1,5 +1,20 @@
-.nav-item {
-  padding: 5px; }
+.nav {
+  list-style: none;
+  z-index: 99;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: red;
+  color: white;
+  position: fixed; }
+  .nav li {
+    padding: 0 10px;
+    text-transform: uppercase; }
+  .nav .navbar-brand {
+    margin-right: auto;
+    text-transform: none; }
+
+.navbar-toggler-icon {
+  background-image: none; }
 
 footer nav {
   border-top: 1px solid gray;
@@ -15,33 +30,6 @@ footer div h1 {
   color: red; }
 footer div p {
   text-transform: uppercase; }
-
-body {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.card {
-  border: none; }
-
-section header h2 {
-  text-transform: uppercase;
-  color: gray;
-  font-size: 14px;
-  font-weight: 600; }
-
-.flex-row.card {
-  border-top: 1px solid gray;
-  padding-top: 10px;
-  margin-bottom: 10px; }
-  .flex-row.card img {
-    max-height: 180px; }
-  .flex-row.card h3 {
-    font-size: 1rem;
-    font-weight: 600; }
-    .flex-row.card h3:hover {
-      text-decoration: underline;
-      text-decoration-color: red; }
-  .flex-row.card p {
-    font-size: .8rem; }
 
 #culture-travel {
   background: rgba(245, 245, 245, 0.89); }
@@ -59,5 +47,73 @@ section header h2 {
       font-size: .9em;
       font-weight: 100;
       color: gray; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+section, footer {
+  position: relative;
+  top: 60px; }
+
+section {
+  margin-bottom: 20px; }
+
+section header h2 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 14px;
+  font-weight: 600; }
+
+.card {
+  border: none; }
+
+.flex-row.card {
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+  .flex-row.card img {
+    max-height: 180px; }
+  .flex-row.card h3 {
+    font-size: 1rem;
+    font-weight: 600; }
+  .flex-row.card p {
+    font-size: .8rem; }
+
+.card .card-img {
+  width: 100%;
+  position: relative; }
+  .card .card-img img {
+    width: 100%; }
+  .card .card-img span {
+    background: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    padding: 5px 20px;
+    color: red;
+    position: absolute;
+    bottom: 0; }
+
+#featured-stories h3 {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+#opinion .card {
+  justify-content: center;
+  border-top: none;
+  border-bottom: 1px solid gray; }
+  #opinion .card img {
+    height: 63px;
+    min-width: 63px;
+    padding-right: 5px; }
+  #opinion .card .card-body {
+    padding-top: 0;
+    padding-bottom: 5px; }
+    #opinion .card .card-body h3 {
+      font-size: 1em; }
+      #opinion .card .card-body h3:hover {
+        color: red; }
+    #opinion .card .card-body h4 {
+      font-size: .8em; }
+#opinion .card:last-child {
+  border: none; }
 
 /*# sourceMappingURL=main.css.map */
