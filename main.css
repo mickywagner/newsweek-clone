@@ -37,7 +37,27 @@ section header h2 {
   .flex-row.card h3 {
     font-size: 1rem;
     font-weight: 600; }
+    .flex-row.card h3:hover {
+      text-decoration: underline;
+      text-decoration-color: red; }
   .flex-row.card p {
     font-size: .8rem; }
+
+#culture-travel {
+  background: rgba(245, 245, 245, 0.89); }
+  #culture-travel header h2 {
+    padding: 10px 0 0 10px; }
+  #culture-travel .card {
+    background: rgba(245, 245, 245, 0.89); }
+    #culture-travel .card h3 {
+      font-size: 1.5em;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    #culture-travel .card p {
+      color: gray; }
+    #culture-travel .card span {
+      background: #c3d4d8;
+      font-size: .9em;
+      font-weight: 100;
+      color: gray; }
 
 /*# sourceMappingURL=main.css.map */
