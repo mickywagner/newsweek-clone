@@ -116,4 +116,7 @@ section header h2 {
 #opinion .card:last-child {
   border: none; }
 
+#latest-news .card:first-of-type {
+  border-top: none; }
+
 /*# sourceMappingURL=main.css.map */
