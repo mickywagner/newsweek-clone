@@ -209,11 +209,22 @@ section header h2 {
     }
 
     .flex-row {
+
         h3 {
+
             &:hover {
                 color: red;
                 text-decoration: none;
             }
         }
+        img {
+            padding-bottom: 15px;
+        }
+
+        border-bottom: 1px solid lightgray;
+        border-top: none;
+    
     }
+
+
 }

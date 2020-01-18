@@ -198,8 +198,13 @@ section header h2 {
 .category header h2 {
   color: red;
   font-size: 1.2em; }
-.category .flex-row h3:hover {
-  color: red;
-  text-decoration: none; }
+.category .flex-row {
+  border-bottom: 1px solid lightgray;
+  border-top: none; }
+  .category .flex-row h3:hover {
+    color: red;
+    text-decoration: none; }
+  .category .flex-row img {
+    padding-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */
