@@ -1,0 +1,33 @@
+#opinion {
+    .card {
+        justify-content: center;
+        border-top: none;
+        border-bottom: 1px solid gray;
+
+        img {
+            height: 63px;
+            min-width: 63px;
+            padding-right: 5px;
+        }
+        
+        .card-body {
+            padding-top: 0;
+            padding-bottom: 5px;
+
+            h3 {
+                font-size: 1em;
+                &:hover {
+                    color: red;
+                }
+            }
+            h4 {
+                font-size: .8em;
+            }
+        }
+    }
+
+    .card:last-child {
+        border: none;
+    }
+    
+}

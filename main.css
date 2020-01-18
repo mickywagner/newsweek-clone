@@ -1,4 +1,4 @@
-.nav {
+header .nav {
   list-style: none;
   z-index: 99;
   width: 100%;
@@ -6,10 +6,10 @@
   background: red;
   color: white;
   position: fixed; }
-  .nav li {
+  header .nav li {
     padding: 0 10px;
     text-transform: uppercase; }
-  .nav .navbar-brand {
+  header .nav .navbar-brand {
     margin-right: auto;
     text-transform: none; }
 
@@ -48,12 +48,32 @@ footer div p {
       font-weight: 100;
       color: gray; }
 
+#opinion .card {
+  justify-content: center;
+  border-top: none;
+  border-bottom: 1px solid gray; }
+  #opinion .card img {
+    height: 63px;
+    min-width: 63px;
+    padding-right: 5px; }
+  #opinion .card .card-body {
+    padding-top: 0;
+    padding-bottom: 5px; }
+    #opinion .card .card-body h3 {
+      font-size: 1em; }
+      #opinion .card .card-body h3:hover {
+        color: red; }
+    #opinion .card .card-body h4 {
+      font-size: .8em; }
+#opinion .card:last-child {
+  border: none; }
+
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
 section, footer {
   position: relative;
-  top: 60px; }
+  top: 75px; }
 
 section {
   margin-bottom: 20px; }
@@ -96,27 +116,47 @@ section header h2 {
   font-size: 1.2em;
   font-weight: bold; }
 
-#opinion .card {
-  justify-content: center;
-  border-top: none;
-  border-bottom: 1px solid gray; }
-  #opinion .card img {
-    height: 63px;
-    min-width: 63px;
-    padding-right: 5px; }
-  #opinion .card .card-body {
-    padding-top: 0;
-    padding-bottom: 5px; }
-    #opinion .card .card-body h3 {
-      font-size: 1em; }
-      #opinion .card .card-body h3:hover {
-        color: red; }
-    #opinion .card .card-body h4 {
-      font-size: .8em; }
-#opinion .card:last-child {
-  border: none; }
-
 #latest-news .card:first-of-type {
   border-top: none; }
+
+#in-magazine header, #newsweek-conversations header, #editor-picks header {
+  margin-top: 10px;
+  text-align: center; }
+  #in-magazine header h2, #newsweek-conversations header h2, #editor-picks header h2 {
+    display: flex;
+    font-size: 1.2em;
+    color: black;
+    justify-content: center;
+    align-items: center; }
+  #in-magazine header span, #newsweek-conversations header span, #editor-picks header span {
+    display: inline-block;
+    height: 29px;
+    width: 28px;
+    margin-right: 10px;
+    background: url("https://g.newsweek.com/www/images/logo-n1.svg") center/contain no-repeat #f72210; }
+
+#in-magazine .card img {
+  height: 50%;
+  width: 100%; }
+#in-magazine .card h3 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 5px; }
+#in-magazine .card a {
+  padding: 5px;
+  text-transform: uppercase;
+  color: red;
+  font-weight: 600;
+  margin-left: 0; }
+#in-magazine .card a.disabled {
+  background: red;
+  color: white; }
+#in-magazine .card:last-of-type span {
+  color: white;
+  background: red; }
+#in-magazine .card:last-of-type a {
+  color: black; }
+  #in-magazine .card:last-of-type a:hover {
+    color: red; }
 
 /*# sourceMappingURL=main.css.map */

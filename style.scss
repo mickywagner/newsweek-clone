@@ -1,6 +1,7 @@
 @import './scss/header.scss';
 @import './scss/footer.scss';
 @import './scss/culture.scss';
+@import './scss/opinion.scss';
 
 
 body {
@@ -9,7 +10,7 @@ body {
 
 section, footer {
     position: relative;
-    top: 60px;
+    top: 75px;
 }
 
 section {
@@ -22,6 +23,7 @@ section header h2 {
     font-size: 14px;
     font-weight: 600;
 }
+
 
 .card {
     border: none;
@@ -75,42 +77,74 @@ section header h2 {
     }
 }
 
-#opinion {
-    .card {
-        justify-content: center;
-        border-top: none;
-        border-bottom: 1px solid gray;
 
-        img {
-            height: 63px;
-            min-width: 63px;
-            padding-right: 5px;
-        }
-        
-        .card-body {
-            padding-top: 0;
-            padding-bottom: 5px;
-
-            h3 {
-                font-size: 1em;
-                &:hover {
-                    color: red;
-                }
-            }
-            h4 {
-                font-size: .8em;
-            }
-        }
-    }
-
-    .card:last-child {
-        border: none;
-    }
-    
-}
 
 #latest-news {
     .card:first-of-type {
         border-top: none;
     }
+}
+
+#in-magazine, #newsweek-conversations, #editor-picks {
+    header{
+        margin-top: 10px;
+        text-align: center;
+
+        h2 {
+            display: flex;
+            font-size: 1.2em;
+            color: black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span {
+            display: inline-block;
+            height: 29px;
+            width: 28px;
+            margin-right: 10px;
+            background: url("https://g.newsweek.com/www/images/logo-n1.svg") center/contain no-repeat #f72210;
+        }
+    }
+}
+
+#in-magazine .card {
+    img {
+        height: 50%;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    a {
+        padding: 5px;
+        text-transform: uppercase;
+        color: red;
+        font-weight: 600;
+        margin-left: 0;
+    }
+
+    a.disabled {
+        background: red;
+        color: white;
+    }
+
+    &:last-of-type {
+        span {
+            color: white;
+            background: red;
+        }
+
+        a {
+            color: black;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
 }
