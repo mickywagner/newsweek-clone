@@ -159,4 +159,22 @@ section header h2 {
   #in-magazine .card:last-of-type a:hover {
     color: red; }
 
+#newsweek-conversations .card {
+  background: black;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center; }
+  #newsweek-conversations .card .icon {
+    height: 30px;
+    width: 30px;
+    background: red;
+    position: absolute;
+    bottom: 0; }
+#newsweek-conversations .card.flex-row {
+  padding-top: 0; }
+  #newsweek-conversations .card.flex-row .img {
+    position: relative; }
+
 /*# sourceMappingURL=main.css.map */

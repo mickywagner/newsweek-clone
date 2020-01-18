@@ -148,3 +148,35 @@ section header h2 {
     }
 
 }
+
+#newsweek-conversations {
+
+    .card {
+        background: black;
+        color: white;
+        border-bottom: 1px solid white;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-items: center;
+
+        .icon {
+            height: 30px;
+            width: 30px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+        }
+
+    }
+
+    .card.flex-row {
+        padding-top: 0;
+
+        .img {
+            position: relative;
+
+        }
+    }
+
+
+}
