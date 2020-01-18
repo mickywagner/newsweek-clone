@@ -60,13 +60,27 @@ section header h2 {
         }
 
         span {
-            background: rgba(255,255,255, 0.6);
+            background: rgba(255,255,255, 0.9);
             text-transform: uppercase;
             padding: 5px 20px;
             color: red;
             position: absolute;
             bottom: 0;
         }
+    }
+
+    h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+    }
+
+    p {
+        font-size: .9em;
     }
 }
 
@@ -85,7 +99,7 @@ section header h2 {
     }
 }
 
-#in-magazine, #newsweek-conversations, #editor-picks {
+#in-magazine, #newsweek-conversations, #editor-picks, #featured-slideshows {
     header{
         margin-top: 10px;
         text-align: center;
@@ -178,5 +192,28 @@ section header h2 {
         }
     }
 
+}
 
+#featured-slideshows .card-img span {
+    line-height: 2.3em;
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 48px;
+    background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+} 
+
+.category {
+    header h2 {
+        color: red;
+        font-size: 1.2em;
+    }
+
+    .flex-row {
+        h3 {
+            &:hover {
+                color: red;
+                text-decoration: none;
+            }
+        }
+    }
 }

@@ -40,6 +40,8 @@ footer div p {
     #culture-travel .card h3 {
       font-size: 1.5em;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      #culture-travel .card h3:hover {
+        text-decoration: none; }
     #culture-travel .card p {
       color: gray; }
     #culture-travel .card span {
@@ -62,7 +64,8 @@ footer div p {
     #opinion .card .card-body h3 {
       font-size: 1em; }
       #opinion .card .card-body h3:hover {
-        color: red; }
+        color: red;
+        text-decoration: none; }
     #opinion .card .card-body h4 {
       font-size: .8em; }
 #opinion .card:last-child {
@@ -105,12 +108,20 @@ section header h2 {
   .card .card-img img {
     width: 100%; }
   .card .card-img span {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
     padding: 5px 20px;
     color: red;
     position: absolute;
     bottom: 0; }
+.card h3 {
+  font-size: 1.2em;
+  font-weight: 600; }
+  .card h3:hover {
+    text-decoration: underline;
+    text-decoration-color: red; }
+.card p {
+  font-size: .9em; }
 
 #featured-stories h3 {
   font-size: 1.2em;
@@ -119,16 +130,16 @@ section header h2 {
 #latest-news .card:first-of-type {
   border-top: none; }
 
-#in-magazine header, #newsweek-conversations header, #editor-picks header {
+#in-magazine header, #newsweek-conversations header, #editor-picks header, #featured-slideshows header {
   margin-top: 10px;
   text-align: center; }
-  #in-magazine header h2, #newsweek-conversations header h2, #editor-picks header h2 {
+  #in-magazine header h2, #newsweek-conversations header h2, #editor-picks header h2, #featured-slideshows header h2 {
     display: flex;
     font-size: 1.2em;
     color: black;
     justify-content: center;
     align-items: center; }
-  #in-magazine header span, #newsweek-conversations header span, #editor-picks header span {
+  #in-magazine header span, #newsweek-conversations header span, #editor-picks header span, #featured-slideshows header span {
     display: inline-block;
     height: 29px;
     width: 28px;
@@ -176,5 +187,19 @@ section header h2 {
   padding-top: 0; }
   #newsweek-conversations .card.flex-row .img {
     position: relative; }
+
+#featured-slideshows .card-img span {
+  line-height: 2.3em;
+  font-size: 1.2em;
+  font-weight: 600;
+  height: 48px;
+  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat; }
+
+.category header h2 {
+  color: red;
+  font-size: 1.2em; }
+.category .flex-row h3:hover {
+  color: red;
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
