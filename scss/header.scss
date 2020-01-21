@@ -38,80 +38,71 @@ header nav {
   }
 
   .fa-bars {
-    color: white;
+    color: #fb9a94;
   }
 }
 
-// header .nav {
-//     list-style: none;
-//     z-index: 99;
-//     width: 100%;
-//     margin-bottom: 1rem;
-//     background: red;
-//     color: white;
-//     position: fixed;
-//     padding: 0;
-//     border: 2px solid yellow;
+.navbar-collapse {
+    background: whitesmoke;
+    color: black;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    
+    .nav {
+        flex-direction: column;
+        border-left: gray;
 
-//     li {
-//         padding: 0 10px;
-//         text-transform: uppercase;
-//         border: 2px solid fuchsia;
-//         display: block;
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            margin-left: 0;
+            
+    
+            &:after {
+                content: '>';
+                font-weight: 900;
+    
+            }
 
-//     }
+            &:hover {
+                background: black;
+                color: white;
+                &:after {
+                    color: red;
+                }
+            }
+            
+        }
 
-//     .navbar-brand {
-//         margin-right: auto;
-//         text-transform: none;
-//         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-//         font-size: 2em;
-//         font-weight: bold;
-//     }
+        li:first-of-type{
+            &:after {
+                content: '';
+            }
 
-// }
+            &:hover {
+                background: none;
+    
+            }
+        }
+        
 
-// .sub-menu {
-//     position: relative;
-//     border: 2px solid green;
-// }
+        #search input {
+            border: none;
+            background: whitesmoke;
 
-// header .nav-2 {
-//     background: whitesmoke;
-//     color: black;
-//     padding: 10px;
-//     height: fit-content;
-//     width: 200px;
-//     position: absolute;
-//     right: 0;
-//     display: flex;
-//     flex-direction: column;
+            &:focus {
+                outline: none;
+            }
+        }
 
-//     li {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         align-items: center;
+    }
+}
 
-//         &:after {
-//             content: '>';
-//             font-weight: 900;
+        
+    
 
-//         }
-//         &:hover {
-//             background: black;
-//             color: white;
-//         }
-//     }
-
-//     #search {
-//         color: gray;
-
-//         &:after{
-//             content: '';
-//             background-image: url(https://g.newsweek.com/www/images/icon-search-glass.svg) ;
-//             width: 10px;
-//             height: 10px;
-//         }
-//     }
-// }

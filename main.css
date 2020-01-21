@@ -27,7 +27,42 @@ header nav {
     align-items: center;
     cursor: pointer; }
   header nav .fa-bars {
-    color: white; }
+    color: #fb9a94; }
+
+.navbar-collapse {
+  background: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 45%;
+  height: 100vh; }
+  .navbar-collapse .nav {
+    flex-direction: column;
+    border-left: gray; }
+    .navbar-collapse .nav li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      margin-left: 0; }
+      .navbar-collapse .nav li:after {
+        content: '>';
+        font-weight: 900; }
+      .navbar-collapse .nav li:hover {
+        background: black;
+        color: white; }
+        .navbar-collapse .nav li:hover:after {
+          color: red; }
+    .navbar-collapse .nav li:first-of-type:after {
+      content: ''; }
+    .navbar-collapse .nav li:first-of-type:hover {
+      background: none; }
+    .navbar-collapse .nav #search input {
+      border: none;
+      background: whitesmoke; }
+      .navbar-collapse .nav #search input:focus {
+        outline: none; }
 
 footer nav {
   border-top: 1px solid gray;
