@@ -1,32 +1,47 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
 #culture-travel {
+  background: rgba(245, 245, 245, 0.89);
+
+  header h2 {
+    padding: 10px 0 0 10px;
+  }
+
+  .card {
     background: rgba(245, 245, 245, 0.89);
-    
-    header h2 {
-       padding: 10px 0 0 10px;
+
+    h3 {
+      font-size: 1.5em;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
+    p {
+      color: gray;
+    }
+
+    span {
+      background: #c3d4d8;
+      font-size: 0.9em;
+      font-weight: 100;
+      color: gray;
+    }
+
+    @include media-breakpoint-up(md) {
+      img {
+        max-height: 120px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
     .card {
-        background: rgba(245, 245, 245, 0.89);
-
-        h3 {
-            font-size: 1.5em;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-        p {
-            color: gray;
-        }
-
-        span {
-            background: #c3d4d8;
-            font-size: .9em;
-            font-weight: 100;
-            color: gray;
-        }
+        padding: 0;
     }
-    
 }

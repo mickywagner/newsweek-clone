@@ -87,17 +87,23 @@ footer div p {
     background: rgba(245, 245, 245, 0.89); }
     #culture-travel .card h3 {
       font-size: 1.5em;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
       #culture-travel .card h3:hover {
         text-decoration: none; }
     #culture-travel .card p {
       color: gray; }
     #culture-travel .card span {
       background: #c3d4d8;
-      font-size: .9em;
+      font-size: 0.9em;
       font-weight: 100;
       color: gray; }
+    @media (min-width: 768px) {
+      #culture-travel .card img {
+        max-height: 120px; } }
 
+@media (min-width: 768px) {
+  .card {
+    padding: 0; } }
 #opinion .card {
   justify-content: center;
   border-top: none;
@@ -143,7 +149,8 @@ section header h2 {
   padding-top: 10px;
   margin-bottom: 10px; }
   .flex-row.card img {
-    max-height: 180px; }
+    max-height: 180px;
+    float: left; }
   .flex-row.card h3 {
     font-size: 1rem;
     font-weight: 600; }
@@ -258,7 +265,6 @@ section header h2 {
     padding-bottom: 15px; }
 
 .row.order-md-2, .row.order-md-3 {
-  max-height: 1800px;
-  overflow: auto; }
+  padding-right: 0; }
 
 /*# sourceMappingURL=main.css.map */
