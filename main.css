@@ -171,9 +171,11 @@ section header h2 {
 .card p {
   font-size: .9em; }
 
-#featured-stories h3 {
-  font-size: 1.2em;
-  font-weight: bold; }
+#featured-stories {
+  max-height: 2000px; }
+  #featured-stories h3 {
+    font-size: 1.2em;
+    font-weight: bold; }
 
 #latest-news .card:first-of-type {
   border-top: none; }
@@ -254,5 +256,9 @@ section header h2 {
     text-decoration: none; }
   .category .flex-row img {
     padding-bottom: 15px; }
+
+.row.order-md-2, .row.order-md-3 {
+  max-height: 1800px;
+  overflow: auto; }
 
 /*# sourceMappingURL=main.css.map */
