@@ -4,9 +4,7 @@
 @import './scss/opinion.scss';
 @import './scss/mediaqueries.scss';
 @import './scss/variables.scss';
-@import './node_modules/bootstrap/scss/functions';
-@import './node_modules/bootstrap/scss/variables';
-@import './node_modules/bootstrap/scss/mixins';
+
 
 
 body {
@@ -42,7 +40,7 @@ section header h2 {
     img {
         max-height: 180px;
         float: left;
-
+        
     }
 
     h3 {
@@ -53,6 +51,14 @@ section header h2 {
     p {
         font-size: .8rem;
     }
+
+    @include media-breakpoint-up(md) {
+        img {
+           max-height: 100px;
+        }
+    }
+
+    
 }
 
 .card {
@@ -74,6 +80,8 @@ section header h2 {
             bottom: 0;
         }
     }
+
+    
 
     h3 {
         font-size: 1.2em;
@@ -196,7 +204,7 @@ section header h2 {
 
         .img {
             position: relative;
-
+        
         }
     }
 
@@ -241,3 +249,4 @@ section header h2 {
 .row.order-md-2, .row.order-md-3 {
     padding-right: 0;
 }
+
