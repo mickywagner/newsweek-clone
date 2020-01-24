@@ -5,41 +5,48 @@ header nav {
   width: 100%;
   z-index: 99;
 
-  .navbar {
+  .nav {
+    flex-wrap: nowrap;
     padding: 5px;
+  }
+
+  .navbar {
+    
 
     .navbar-brand {
       margin-right: auto;
       text-transform: none;
       font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       font-weight: 900;
-      font-size: 1.5em;
+      font-size: 2rem;
     }
 
     .subscribe {
       background: whitesmoke;
       color: red;
-      padding-left: 10px;
-      padding-right: 10px;
-
-      &:after {
-        content: ">";
-        margin-left: 10px;
-      }
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 
   li {
     text-transform: uppercase;
-    margin-left: 10px;
+    width: fit-content;
+    font-size: .8em;
+    margin-left: 5px;
     display: flex;
     align-items: center;
     cursor: pointer;
   }
 
-  .fa-bars {
-    color: #fb9a94;
+  .navbar-toggler {
+    padding: 0;
+    padding-left: 0;
+  }
 
+  .fa-bars {
+    font-size: 1.4em;
+    color: #fb9a94;
   }
 }
 
