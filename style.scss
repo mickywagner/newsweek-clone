@@ -99,7 +99,7 @@ section header h2 {
 }
 
 #featured-stories {
-    max-height: 2000px;
+   
     h3 {
         font-size: 1.2em;
         font-weight: bold;
@@ -248,5 +248,10 @@ section header h2 {
 
 .row.order-md-2, .row.order-md-3 {
     padding-right: 0;
+    flex-direction: column;
+
+    .col {
+        flex-grow: 0;
+    }
 }
 
