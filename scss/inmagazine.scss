@@ -1,0 +1,50 @@
+#in-magazine .card {
+    img {
+        height: 50%;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    a {
+        padding: 5px;
+        text-transform: uppercase;
+        color: red;
+        font-weight: 600;
+        margin-left: 0;
+    }
+
+    a.disabled {
+        background: red;
+        color: white;
+    }
+
+    &:last-of-type {
+        span {
+            color: white;
+            background: red;
+        }
+
+        a {
+            color: black;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+}
+
+.card-body.bg-light {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+    h2 {
+        font-size: 1.2em;
+    }
+}

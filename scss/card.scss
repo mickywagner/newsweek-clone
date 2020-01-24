@@ -1,0 +1,68 @@
+.card {
+    border: none;  
+}
+
+.flex-row.card {
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+        max-height: 180px;
+        float: left;
+        
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        img {
+           max-height: 100px;
+        }
+    }
+    
+}
+
+.card {
+    .card-img {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+     
+        }
+
+        span {
+            background: rgba(255,255,255, 0.9);
+            text-transform: uppercase;
+            padding: 5px 20px;
+            color: red;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    
+
+    h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+    }
+
+    p {
+        font-size: .9em;
+    }
+}

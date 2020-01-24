@@ -2,6 +2,8 @@
 @import './scss/footer.scss';
 @import './scss/culture.scss';
 @import './scss/opinion.scss';
+@import './scss/card.scss';
+@import './scss/inmagazine.scss';
 @import './scss/mediaqueries.scss';
 @import './scss/variables.scss';
 
@@ -28,75 +30,7 @@ section header h2 {
 }
 
 
-.card {
-    border: none;  
-}
 
-.flex-row.card {
-    border-top: 1px solid gray;
-    padding-top: 10px;
-    margin-bottom: 10px;
-
-    img {
-        max-height: 180px;
-        float: left;
-        
-    }
-
-    h3 {
-        font-size: 1rem;
-        font-weight: 600;
-    }
-
-    p {
-        font-size: .8rem;
-    }
-
-    @include media-breakpoint-up(md) {
-        img {
-           max-height: 100px;
-        }
-    }
-
-    
-}
-
-.card {
-    .card-img {
-        width: 100%;
-        position: relative;
-
-        img {
-            width: 100%;
-     
-        }
-
-        span {
-            background: rgba(255,255,255, 0.9);
-            text-transform: uppercase;
-            padding: 5px 20px;
-            color: red;
-            position: absolute;
-            bottom: 0;
-        }
-    }
-
-    
-
-    h3 {
-        font-size: 1.2em;
-        font-weight: 600;
-
-        &:hover {
-            text-decoration: underline;
-            text-decoration-color: red;
-        }
-    }
-
-    p {
-        font-size: .9em;
-    }
-}
 
 #featured-stories {
    
@@ -137,46 +71,6 @@ section header h2 {
     }
 }
 
-#in-magazine .card {
-    img {
-        height: 50%;
-        width: 100%;
-    }
-
-    h3 {
-        font-size: 1em;
-        font-weight: 600;
-        margin-top: 5px;
-    }
-
-    a {
-        padding: 5px;
-        text-transform: uppercase;
-        color: red;
-        font-weight: 600;
-        margin-left: 0;
-    }
-
-    a.disabled {
-        background: red;
-        color: white;
-    }
-
-    &:last-of-type {
-        span {
-            color: white;
-            background: red;
-        }
-
-        a {
-            color: black;
-            &:hover {
-                color: red;
-            }
-        }
-    }
-
-}
 
 #newsweek-conversations {
 
