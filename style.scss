@@ -3,6 +3,7 @@
 @import './scss/culture.scss';
 @import './scss/opinion.scss';
 @import './scss/card.scss';
+@import './scss/category.scss';
 @import './scss/inmagazine.scss';
 @import './scss/mediaqueries.scss';
 @import './scss/variables.scss';
@@ -112,32 +113,7 @@ section header h2 {
     background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
 } 
 
-.category {
-    header h2 {
-        color: red;
-        font-size: 1.2em;
-    }
 
-    .flex-row {
-
-        h3 {
-
-            &:hover {
-                color: red;
-                text-decoration: none;
-            }
-        }
-        img {
-            padding-bottom: 15px;
-        }
-
-        border-bottom: 1px solid lightgray;
-        border-top: none;
-    
-    }
-
-
-}
 
 
 .row.order-md-2, .row.order-md-3 {

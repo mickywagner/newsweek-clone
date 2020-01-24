@@ -163,6 +163,25 @@ footer div p {
 .card p {
   font-size: .9em; }
 
+.category {
+  border-top: 1px solid lightgray; }
+  .category header h2 {
+    color: red;
+    font-size: 1.2em;
+    margin-top: 20px; }
+  .category .flex-row {
+    border-bottom: 1px solid lightgray;
+    border-top: none; }
+    .category .flex-row h3:hover {
+      color: red;
+      text-decoration: none; }
+    .category .flex-row img {
+      padding-bottom: 15px; }
+    .category .flex-row:last-of-type {
+      border-bottom: none; }
+  .category .flex-row.card {
+    padding-top: 0; }
+
 #in-magazine .card img {
   height: 50%;
   width: 100%; }
@@ -257,18 +276,6 @@ section header h2 {
   font-weight: 600;
   height: 48px;
   background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat; }
-
-.category header h2 {
-  color: red;
-  font-size: 1.2em; }
-.category .flex-row {
-  border-bottom: 1px solid lightgray;
-  border-top: none; }
-  .category .flex-row h3:hover {
-    color: red;
-    text-decoration: none; }
-  .category .flex-row img {
-    padding-bottom: 15px; }
 
 .row.order-md-2, .row.order-md-3 {
   padding-right: 0;
