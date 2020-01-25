@@ -1,4 +1,6 @@
 @import './scss/header.scss';
+@import './scss/topstory';
+@import './scss/morestories';
 @import './scss/footer.scss';
 @import './scss/culture.scss';
 @import './scss/opinion.scss';
@@ -34,19 +36,12 @@ section header h2 {
     font-weight: 600;
 }
 
-.row.top-page {
+.top-page .row {
     margin-left: 0;
-    margin-right: 0;
-
-    .row {
-        margin: 0;
-    }
-
-}
-
-#top-story {
-    img {
-        max-height: 300px;
+    margin-top: 20px;
+   
+    .col {
+        padding: 0;
     }
 }
 

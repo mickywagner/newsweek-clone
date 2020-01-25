@@ -68,6 +68,41 @@ header nav {
       .navbar-collapse .nav #search input:focus {
         outline: none; }
 
+#top-story .card {
+  border: none; }
+  #top-story .card .img {
+    height: 35%;
+    width: 100%;
+    position: relative; }
+    #top-story .card .img img {
+      width: 100%; }
+    #top-story .card .img span {
+      background: rgba(255, 255, 255, 0.9);
+      text-transform: uppercase;
+      padding: 5px 20px;
+      color: red;
+      position: absolute;
+      bottom: 0; }
+#top-story .card-body h3 {
+  font-size: 1.3em;
+  font-weight: 600; }
+#top-story .card-body p {
+  font-size: .8em; }
+
+#more-stories .card {
+  display: block;
+  border-top: 1px solid lightgray;
+  padding-top: 10px; }
+  #more-stories .card .img {
+    width: 50%; }
+    #more-stories .card .img img {
+      width: 100%;
+      float: left;
+      padding-right: 10px; }
+#more-stories .card-body {
+  padding: 0;
+  font-size: 1em; }
+
 footer nav {
   border-top: 1px solid gray;
   font-size: .9em;
@@ -238,14 +273,11 @@ section header h2 {
   font-size: 14px;
   font-weight: 600; }
 
-.row.top-page {
+.top-page .row {
   margin-left: 0;
-  margin-right: 0; }
-  .row.top-page .row {
-    margin: 0; }
-
-#top-story img {
-  max-height: 300px; }
+  margin-top: 20px; }
+  .top-page .row .col {
+    padding: 0; }
 
 #featured-stories h3 {
   font-size: 1.2em;

@@ -1,0 +1,28 @@
+#more-stories {
+    .card {
+        display: block;
+        border-top: 1px solid lightgray;
+        padding-top: 10px;
+        
+        
+        .img {
+            width: 50%;
+
+            img {
+                width: 100%;
+                float: left;
+                padding-right: 10px;
+
+            }
+
+        }
+        
+    }
+
+    .card-body {
+        padding: 0;
+        font-size: 1em;
+    }
+
+    
+}
