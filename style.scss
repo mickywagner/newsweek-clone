@@ -2,7 +2,7 @@
 @import './scss/topstory';
 @import './scss/morestories';
 @import './scss/footer.scss';
-@import './scss/culture.scss';
+@import './scss/_culture.scss';
 @import './scss/opinion.scss';
 @import './scss/card.scss';
 @import './scss/category.scss';
@@ -43,6 +43,10 @@ section header h2 {
     .col {
         padding: 0;
     }
+}
+
+.card {
+    border-radius: 0;
 }
 
 

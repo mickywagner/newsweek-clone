@@ -4,18 +4,33 @@
 
 #culture-travel {
   background: rgba(245, 245, 245, 0.89);
-  width: 100%;
 
   header h2 {
     padding: 10px 0 0 10px;
   }
 
+  .container {
+    padding: 0;
+  }
+
   .card {
     background: rgba(245, 245, 245, 0.89);
-    padding: 0;
+
+    .img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+
+    .card-body {
+      padding: 10px;
+    }
 
     h3 {
-      font-size: 1.5em;
+      font-size: 1.1em;
       font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
       &:hover {
@@ -25,6 +40,7 @@
 
     p {
       color: gray;
+      font-size: .9em;
     }
 
     span {

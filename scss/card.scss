@@ -20,12 +20,6 @@
     p {
         font-size: .8rem;
     }
-
-    @include media-breakpoint-up(md) {
-        img {
-           max-height: 100px;
-        }
-    }
     
 }
 

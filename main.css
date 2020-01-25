@@ -98,10 +98,15 @@ header nav {
     #more-stories .card .img img {
       width: 100%;
       float: left;
-      padding-right: 10px; }
+      padding-right: 10px;
+      padding-bottom: 10px; }
 #more-stories .card-body {
   padding: 0;
   font-size: 1em; }
+  #more-stories .card-body h3 {
+    font-size: 1em; }
+  #more-stories .card-body p {
+    font-size: .8em; }
 
 footer nav {
   border-top: 1px solid gray;
@@ -119,20 +124,27 @@ footer div p {
   text-transform: uppercase; }
 
 #culture-travel {
-  background: rgba(245, 245, 245, 0.89);
-  width: 100%; }
+  background: rgba(245, 245, 245, 0.89); }
   #culture-travel header h2 {
     padding: 10px 0 0 10px; }
-  #culture-travel .card {
-    background: rgba(245, 245, 245, 0.89);
+  #culture-travel .container {
     padding: 0; }
+  #culture-travel .card {
+    background: rgba(245, 245, 245, 0.89); }
+    #culture-travel .card .img {
+      width: 100%; }
+      #culture-travel .card .img img {
+        width: 100%; }
+    #culture-travel .card .card-body {
+      padding: 10px; }
     #culture-travel .card h3 {
-      font-size: 1.5em;
+      font-size: 1.1em;
       font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
       #culture-travel .card h3:hover {
         text-decoration: none; }
     #culture-travel .card p {
-      color: gray; }
+      color: gray;
+      font-size: .9em; }
     #culture-travel .card span {
       background: #c3d4d8;
       font-size: 0.9em;
@@ -178,9 +190,6 @@ footer div p {
     font-weight: 600; }
   .flex-row.card p {
     font-size: .8rem; }
-  @media (min-width: 768px) {
-    .flex-row.card img {
-      max-height: 100px; } }
 
 .card .card-img {
   width: 100%;
@@ -278,6 +287,9 @@ section header h2 {
   margin-top: 20px; }
   .top-page .row .col {
     padding: 0; }
+
+.card {
+  border-radius: 0; }
 
 #featured-stories h3 {
   font-size: 1.2em;
