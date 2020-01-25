@@ -30,7 +30,18 @@
 
     .flex-row.card {
         padding-top: 0;
+
+        .img {
+            min-width: 200px;
+            width: 50%;
+    
+            img {
+                width: 100%;
+            }
+        }
     }
+
+    
 
     
 }

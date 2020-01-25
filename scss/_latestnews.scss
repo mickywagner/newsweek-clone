@@ -1,0 +1,17 @@
+#latest-news {
+    
+    .card:first-of-type {
+        border-top: none;
+    }
+
+    .img {
+        min-width: 200px;
+        width: 50%;
+
+
+        img {
+           width: 100%;
+        }
+    }
+    
+}

@@ -154,10 +154,18 @@ footer div p {
       #culture-travel .card img {
         max-height: 120px; } }
 
+#latest-news .card:first-of-type {
+  border-top: none; }
+#latest-news .img {
+  min-width: 200px;
+  width: 50%; }
+  #latest-news .img img {
+    width: 100%; }
+
 #opinion .card {
   justify-content: center;
   border-top: none;
-  border-bottom: 1px solid gray; }
+  border-bottom: 1px solid lightgray; }
   #opinion .card img {
     height: 63px;
     min-width: 63px;
@@ -179,12 +187,9 @@ footer div p {
   border: none; }
 
 .flex-row.card {
-  border-top: 1px solid gray;
+  border-top: 1px solid lightgray;
   padding-top: 10px;
   margin-bottom: 10px; }
-  .flex-row.card img {
-    max-height: 160px;
-    float: left; }
   .flex-row.card h3 {
     font-size: 1rem;
     font-weight: 600; }
@@ -230,6 +235,11 @@ footer div p {
       border-bottom: none; }
   .category .flex-row.card {
     padding-top: 0; }
+    .category .flex-row.card .img {
+      min-width: 200px;
+      width: 50%; }
+      .category .flex-row.card .img img {
+        width: 100%; }
 
 #in-magazine .card img {
   height: 50%;
@@ -274,7 +284,7 @@ section, footer {
   top: 75px; }
 
 section {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 section header h2 {
   text-transform: uppercase;
@@ -287,16 +297,11 @@ section header h2 {
   margin-top: 20px; }
   .top-page .row .col {
     padding: 0; }
+.top-page .container {
+  padding: 0; }
 
 .card {
   border-radius: 0; }
-
-#featured-stories h3 {
-  font-size: 1.2em;
-  font-weight: bold; }
-
-#latest-news .card:first-of-type {
-  border-top: none; }
 
 #in-magazine header, #newsweek-conversations header, #editor-picks header, #featured-slideshows header {
   margin-top: 10px;

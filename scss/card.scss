@@ -3,14 +3,9 @@
 }
 
 .flex-row.card {
-    border-top: 1px solid gray;
+    border-top: 1px solid lightgray;
     padding-top: 10px;
     margin-bottom: 10px;
-
-    img {
-        max-height: 160px;
-        float: left;
-    }
 
     h3 {
         font-size: 1rem;
@@ -30,7 +25,6 @@
 
         img {
             width: 100%;
-     
         }
 
         span {
@@ -42,8 +36,6 @@
             bottom: 0;
         }
     }
-
-    
 
     h3 {
         font-size: 1.2em;
