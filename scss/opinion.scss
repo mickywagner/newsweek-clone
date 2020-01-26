@@ -22,14 +22,41 @@
                     text-decoration: none;
                 }
             }
+
             h4 {
                 font-size: .8em;
+                font-weight: 600;
+                color: darkgray;
             }
         }
     }
 
     .card:last-child {
         border: none;
+    }
+
+    @include media-breakpoint-up(md) {
+        .card {
+            img {
+                height: 50px;
+                width: 50px;
+                margin-right: 5px;
+            }
+
+            .card-body {
+                padding: 0;
+
+                h3 {
+                    font-size: 12px;
+                }
+
+                h4 {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        
     }
     
 }

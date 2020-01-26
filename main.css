@@ -214,9 +214,22 @@ footer div p {
         color: red;
         text-decoration: none; }
     #opinion .card .card-body h4 {
-      font-size: .8em; }
+      font-size: .8em;
+      font-weight: 600;
+      color: darkgray; }
 #opinion .card:last-child {
   border: none; }
+@media (min-width: 768px) {
+  #opinion .card img {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px; }
+  #opinion .card .card-body {
+    padding: 0; }
+    #opinion .card .card-body h3 {
+      font-size: 12px; }
+    #opinion .card .card-body h4 {
+      font-size: 10px; } }
 
 .card {
   border: none; }
@@ -346,15 +359,12 @@ section header h2 {
   font-size: 14px;
   font-weight: 600; }
 
-.top-page {
-  margin-left: 0; }
-  .top-page .row {
+.container-fluid {
+  padding: 0; }
+  .container-fluid .row {
     margin-left: 0;
-    margin-top: 20px; }
-    .top-page .row .col {
-      padding: 0; }
-  .top-page .container {
-    padding: 0; }
+    margin-right: 0;
+    margin-top: 10px; }
 
 .card {
   border-radius: 0; }

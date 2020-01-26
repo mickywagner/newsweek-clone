@@ -40,21 +40,13 @@ section header h2 {
     font-weight: 600;
 }
 
-.top-page {
-    margin-left: 0;
-    
+.container-fluid {
     .row {
         margin-left: 0;
-        margin-top: 20px;
-       
-        .col {
-            padding: 0;
-        }
+        margin-right: 0;
+        margin-top: 10px;
     }
-
-    .container {
-        padding: 0;
-    }
+    padding: 0;
 
 }
 
