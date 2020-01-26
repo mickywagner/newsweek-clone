@@ -32,16 +32,17 @@
         padding-top: 0;
 
         .img {
-            min-width: 200px;
-            width: 50%;
-    
+            flex: 1;
+
             img {
                 width: 100%;
             }
         }
-    }
 
-    
+        .card-body {
+            flex: 1;
+        }
+    } 
 
     
 }

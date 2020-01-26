@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap");
 header nav {
   background: red;
   color: white;
@@ -91,15 +92,25 @@ header nav {
 
 #more-stories .card {
   display: block;
-  border-top: 1px solid lightgray;
-  padding-top: 10px; }
+  padding-top: 10px;
+  position: relative;
+  margin-bottom: auto;
+  min-height: 160px; }
   #more-stories .card .img {
-    width: 50%; }
+    width: 50%;
+    max-width: 200px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both; }
     #more-stories .card .img img {
       width: 100%;
-      float: left;
       padding-right: 10px;
-      padding-bottom: 10px; }
+      margin-bottom: 10px; }
+  @media (min-width: 400px) {
+    #more-stories .card .card-body h3 {
+      font-size: 15px; }
+    #more-stories .card .card-body p {
+      font-size: 10px; } }
 #more-stories .card-body {
   padding: 0;
   font-size: 1em; }
@@ -157,10 +168,34 @@ footer div p {
 #latest-news .card:first-of-type {
   border-top: none; }
 #latest-news .img {
-  min-width: 200px;
-  width: 50%; }
+  flex: 1; }
   #latest-news .img img {
     width: 100%; }
+#latest-news .card-body {
+  flex: 1; }
+
+#newsweek-conversations .card {
+  color: white;
+  border-bottom: 1px solid white;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center; }
+#newsweek-conversations .flex-row {
+  background: black;
+  width: 100%; }
+  #newsweek-conversations .flex-row h3 {
+    font-size: .8rem; }
+  #newsweek-conversations .flex-row p {
+    font-size: .5em; }
+  #newsweek-conversations .flex-row .img {
+    flex: 1;
+    padding-right: 10px;
+    padding-bottom: 10px; }
+  #newsweek-conversations .flex-row .card-body {
+    flex: 1;
+    flex-grow: 2; }
+#newsweek-conversations .card-body {
+  background: black; }
 
 #opinion .card {
   justify-content: center;
@@ -210,7 +245,8 @@ footer div p {
     bottom: 0; }
 .card h3 {
   font-size: 1.2em;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif; }
   .card h3:hover {
     text-decoration: underline;
     text-decoration-color: red; }
@@ -236,13 +272,14 @@ footer div p {
   .category .flex-row.card {
     padding-top: 0; }
     .category .flex-row.card .img {
-      min-width: 200px;
-      width: 50%; }
+      flex: 1; }
       .category .flex-row.card .img img {
         width: 100%; }
+    .category .flex-row.card .card-body {
+      flex: 1; }
 
 #in-magazine .card img {
-  height: 50%;
+  height: 60%;
   width: 100%; }
 #in-magazine .card h3 {
   font-size: 1em;
@@ -272,37 +309,6 @@ footer div p {
   .card-body.bg-light h2 {
     font-size: 1.2em; }
 
-html, body {
-  overflow-x: hidden; }
-
-body {
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif; }
-
-section, footer {
-  position: relative;
-  top: 75px; }
-
-section {
-  margin-bottom: 10px; }
-
-section header h2 {
-  text-transform: uppercase;
-  color: gray;
-  font-size: 14px;
-  font-weight: 600; }
-
-.top-page .row {
-  margin-left: 0;
-  margin-top: 20px; }
-  .top-page .row .col {
-    padding: 0; }
-.top-page .container {
-  padding: 0; }
-
-.card {
-  border-radius: 0; }
-
 #in-magazine header, #newsweek-conversations header, #editor-picks header, #featured-slideshows header {
   margin-top: 10px;
   text-align: center; }
@@ -319,25 +325,39 @@ section header h2 {
     margin-right: 10px;
     background: url("https://g.newsweek.com/www/images/logo-n1.svg") center/contain no-repeat #f72210; }
 
-#newsweek-conversations {
-  margin-left: 15px; }
-  #newsweek-conversations .card {
-    background: black;
-    color: white;
-    border-bottom: 1px solid white;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-items: center; }
-    #newsweek-conversations .card .icon {
-      height: 30px;
-      width: 30px;
-      background: red;
-      position: absolute;
-      bottom: 0; }
-  #newsweek-conversations .card.flex-row {
-    padding-top: 0; }
-    #newsweek-conversations .card.flex-row .img {
-      position: relative; }
+html, body {
+  overflow-x: hidden; }
+
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif; }
+
+section, footer {
+  position: relative;
+  top: 75px; }
+
+section {
+  margin-bottom: 10px; }
+
+section header h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  color: gray;
+  font-size: 14px;
+  font-weight: 600; }
+
+.top-page {
+  margin-left: 0; }
+  .top-page .row {
+    margin-left: 0;
+    margin-top: 20px; }
+    .top-page .row .col {
+      padding: 0; }
+  .top-page .container {
+    padding: 0; }
+
+.card {
+  border-radius: 0; }
 
 #featured-slideshows .card-img span {
   line-height: 2.3em;

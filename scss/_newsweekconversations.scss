@@ -1,0 +1,41 @@
+#newsweek-conversations {
+    
+    .card {
+        color: white;
+        border-bottom: 1px solid white;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-items: center;
+
+    }
+
+    .flex-row {
+        background: black;
+        width: 100%;
+
+        h3 {
+            font-size: .8rem;
+        }
+
+        p {
+            font-size: .5em;
+        }
+
+        .img {
+            flex: 1;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+
+        .card-body {
+            flex: 1;
+            flex-grow: 2;
+        }
+    }
+
+    .card-body {
+        background: black;
+        
+    }
+
+}

@@ -4,12 +4,14 @@
 @import './scss/footer.scss';
 @import './scss/_culture.scss';
 @import './scss/latestnews';
+@import './scss/newsweekconversations';
 @import './scss/opinion.scss';
 @import './scss/card.scss';
 @import './scss/category.scss';
 @import './scss/inmagazine.scss';
 @import './scss/mediaqueries.scss';
 @import './scss/variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
 
 html, body {
     overflow-x: hidden;
@@ -32,13 +34,15 @@ section {
 
 section header h2 {
     text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
     color: gray;
     font-size: 14px;
     font-weight: 600;
 }
 
 .top-page {
-
+    margin-left: 0;
+    
     .row {
         margin-left: 0;
         margin-top: 20px;
@@ -58,71 +62,6 @@ section header h2 {
     border-radius: 0;
 }
 
-
-
-
-
-
-
-
-
-
-#in-magazine, #newsweek-conversations, #editor-picks, #featured-slideshows {
-    header{
-        margin-top: 10px;
-        text-align: center;
-
-        h2 {
-            display: flex;
-            font-size: 1.2em;
-            color: black;
-            justify-content: center;
-            align-items: center;
-        }
-
-        span {
-            display: inline-block;
-            height: 29px;
-            width: 28px;
-            margin-right: 10px;
-            background: url("https://g.newsweek.com/www/images/logo-n1.svg") center/contain no-repeat #f72210;
-        }
-    }
-}
-
-
-#newsweek-conversations {
-    margin-left: 15px;
-
-    .card {
-        background: black;
-        color: white;
-        border-bottom: 1px solid white;
-        margin-top: 0;
-        margin-bottom: 0;
-        align-items: center;
-    
-
-        .icon {
-            height: 30px;
-            width: 30px;
-            background: red;
-            position: absolute;
-            bottom: 0;
-        }
-
-    }
-
-    .card.flex-row {
-        padding-top: 0;
-
-        .img {
-            position: relative;
-        
-        }
-    }
-
-}
 
 #featured-slideshows .card-img span {
     line-height: 2.3em;
