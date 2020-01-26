@@ -40,13 +40,14 @@ section header h2 {
     font-weight: 600;
 }
 
-.container-fluid {
+.container-fluid.top {
     .row {
         margin-left: 0;
         margin-right: 0;
         margin-top: 10px;
     }
-    padding: 0;
+
+    padding: 0; 
 
 }
 

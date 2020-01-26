@@ -320,7 +320,7 @@ footer div p {
   text-transform: uppercase;
   font-weight: 600; }
   .card-body.bg-light h2 {
-    font-size: 1.2em; }
+    font-size: 1em; }
 
 #in-magazine header, #newsweek-conversations header, #editor-picks header, #featured-slideshows header {
   margin-top: 10px;
@@ -359,9 +359,9 @@ section header h2 {
   font-size: 14px;
   font-weight: 600; }
 
-.container-fluid {
+.container-fluid.top {
   padding: 0; }
-  .container-fluid .row {
+  .container-fluid.top .row {
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px; }
