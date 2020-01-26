@@ -56,5 +56,27 @@
       }
     }
   }
+
+  @include media-breakpoint-up(sm) {
+    .card {
+       &:nth-child(odd) {
+         padding-left: 0;
+       }
+
+       &:nth-child(even) {
+         padding-right: 0;
+       }
+    }
+
+    .card-body {
+      h3 {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: .8em;
+      }
+    }
+  }
 }
 

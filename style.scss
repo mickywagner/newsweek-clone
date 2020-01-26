@@ -49,6 +49,20 @@ section header h2 {
 
     padding: 0; 
 
+    @include media-breakpoint-up(sm) {
+        #row-1 {
+            height: 1700px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        #row-3 {
+            height: 1700px;
+        
+        }
+    }
+
+
 }
 
 .card {
@@ -75,4 +89,7 @@ section header h2 {
         flex-grow: 0;
     }
 }
+
+ 
+
 

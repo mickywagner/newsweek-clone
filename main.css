@@ -80,10 +80,14 @@ header nav {
     #top-story .card .img span {
       background: rgba(255, 255, 255, 0.9);
       text-transform: uppercase;
-      padding: 5px 20px;
+      padding: 5px 10px;
+      font-weight: 700;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: .8em;
       color: red;
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      left: 0; }
 #top-story .card-body h3 {
   font-size: 1.3em;
   font-weight: 600; }
@@ -164,6 +168,15 @@ footer div p {
     @media (min-width: 768px) {
       #culture-travel .card img {
         max-height: 120px; } }
+  @media (min-width: 576px) {
+    #culture-travel .card:nth-child(odd) {
+      padding-left: 0; }
+    #culture-travel .card:nth-child(even) {
+      padding-right: 0; }
+    #culture-travel .card-body h3 {
+      font-size: 1em; }
+    #culture-travel .card-body p {
+      font-size: .8em; } }
 
 #latest-news .card:first-of-type {
   border-top: none; }
@@ -252,10 +265,14 @@ footer div p {
   .card .card-img span {
     background: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
-    padding: 5px 20px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: .8em;
     color: red;
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    left: 0; }
 .card h3 {
   font-size: 1.2em;
   font-weight: 600;
@@ -264,7 +281,7 @@ footer div p {
     text-decoration: underline;
     text-decoration-color: red; }
 .card p {
-  font-size: .9em; }
+  font-size: .8em; }
 
 .category {
   border-top: 1px solid lightgray; }
@@ -365,6 +382,12 @@ section header h2 {
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px; }
+  @media (min-width: 576px) {
+    .container-fluid.top #row-1 {
+      height: 1700px; } }
+  @media (min-width: 768px) {
+    .container-fluid.top #row-3 {
+      height: 1700px; } }
 
 .card {
   border-radius: 0; }
