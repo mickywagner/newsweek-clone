@@ -15,5 +15,27 @@
     .card-body {
         flex: 1;
     }
+
+    @include media-breakpoint-up(sm) {
+        .card-body {
+            flex: 2;
+        }
+    }   
+
+    @include media-breakpoint-up(md) {
+        .card-body {
+            flex: 1;
+            
+            h3 {
+               font-size: 12px;
+            }
+
+            padding: 0;
+            padding-left: 5px;
+        }
+
+
+        
+    }
     
 }

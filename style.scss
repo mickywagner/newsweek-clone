@@ -52,13 +52,13 @@ section header h2 {
     @include media-breakpoint-up(sm) {
         #row-1 {
             height: 1700px;
+            overflow-y: scroll;
         }
     }
 
     @include media-breakpoint-up(md) {
         #row-3 {
             height: 1700px;
-        
         }
     }
 
@@ -71,10 +71,10 @@ section header h2 {
 
 
 #featured-slideshows .card-img span {
-    line-height: 2.3em;
+    line-height: 2em;
     font-size: 1.2em;
     font-weight: 600;
-    height: 48px;
+    height: 30px;
     background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
 } 
 

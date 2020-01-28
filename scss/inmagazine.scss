@@ -39,6 +39,14 @@
 
 }
 
+@include media-breakpoint-up(sm) {
+    #in-magazine {
+        margin-bottom: 50px;
+    }
+}
+
+
+
 .card-body.bg-light {
     text-align: center;
     text-transform: uppercase;
