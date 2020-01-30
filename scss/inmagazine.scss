@@ -1,6 +1,14 @@
 #in-magazine .card {
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    .card-body {
+        padding-right: 0;
+        padding-top: 2px;
+    }
+
     img {
-        height: 60%;
+        height: 70%;
         width: 100%;
     }
 
@@ -11,7 +19,7 @@
     }
 
     a {
-        padding: 5px;
+        padding: 3px;
         text-transform: uppercase;
         color: red;
         font-weight: 600;
@@ -41,7 +49,30 @@
 
 @include media-breakpoint-up(sm) {
     #in-magazine {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
+
+        header {
+            border-bottom: 1px solid lightgray;
+        }
+
+        .card h3 {
+            font-size: .9em;
+        }
+        
+        a {
+            font-size: 10px;
+        }
+        
+        .card:last-of-type {
+            
+            .card-img {
+                height: 70%;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
     }
 }
 
