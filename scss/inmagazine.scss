@@ -1,14 +1,16 @@
 #in-magazine .card {
     padding-top: 10px;
     margin-bottom: 10px;
+    min-height: fit-content;
 
     .card-body {
         padding-right: 0;
         padding-top: 2px;
+        height: fit-content;
     }
 
     img {
-        height: 70%;
+        min-height: 55%;
         width: 100%;
     }
 
@@ -19,7 +21,7 @@
     }
 
     a {
-        padding: 3px;
+        padding: 2px;
         text-transform: uppercase;
         color: red;
         font-weight: 600;
@@ -66,7 +68,7 @@
         .card:last-of-type {
             
             .card-img {
-                height: 70%;
+                height:60%;
 
                 img {
                     height: 100%;

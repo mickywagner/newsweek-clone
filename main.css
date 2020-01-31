@@ -200,20 +200,32 @@ header nav {
   #more-stories .card-body p {
     font-size: .8em; }
 
+footer header {
+  border-top: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline; }
+  @media (min-width: 768px) {
+    footer header {
+      flex-direction: row; } }
 footer nav {
-  border-top: 1px solid gray;
-  font-size: .9em;
-  color: slategray; }
+  border-top: 1px solid lightgray;
+  font-size: .7rem;
+  color: darkslategray; }
   footer nav li {
     padding: 8px;
     font-weight: 300; }
   footer nav li:first-of-type {
     font-weight: 600; }
 
-footer div h1 {
-  color: red; }
-footer div p {
-  text-transform: uppercase; }
+footer svg {
+  fill: red;
+  height: 50px;
+  width: 150px;
+  margin-right: 5px; }
+footer p {
+  text-transform: uppercase;
+  font-size: .65rem; }
 
 #culture-travel {
   background: rgba(245, 245, 245, 0.89); }
@@ -455,19 +467,21 @@ footer div p {
 
 #in-magazine .card {
   padding-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  min-height: fit-content; }
   #in-magazine .card .card-body {
     padding-right: 0;
-    padding-top: 2px; }
+    padding-top: 2px;
+    height: fit-content; }
   #in-magazine .card img {
-    height: 70%;
+    min-height: 55%;
     width: 100%; }
   #in-magazine .card h3 {
     font-size: 1em;
     font-weight: 600;
     margin-top: 5px; }
   #in-magazine .card a {
-    padding: 3px;
+    padding: 2px;
     text-transform: uppercase;
     color: red;
     font-weight: 600;
@@ -493,7 +507,7 @@ footer div p {
     #in-magazine a {
       font-size: 10px; }
     #in-magazine .card:last-of-type .card-img {
-      height: 70%; }
+      height: 60%; }
       #in-magazine .card:last-of-type .card-img img {
         height: 100%; } }
 .card-body.bg-light {

@@ -1,22 +1,46 @@
-footer nav {
-    border-top: 1px solid gray;
-    font-size: .9em;
-    color: slategray;
+footer {
+    header {
+        border-top: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    nav {
+    
+    border-top: 1px solid lightgray;
+    font-size: .7rem;
+    color: darkslategray;
+
+    
+
     li {
         padding: 8px;
         font-weight: 300;
+        
     }
+
     li:first-of-type {
         font-weight: 600;
     }
 }
+}
 
-footer div {
-    h1 {
-        color: red;
+footer {
+    svg {
+        fill: red;
+        height: 50px;
+        width: 150px;
+        margin-right: 5px;
     }
 
     p {
         text-transform: uppercase;
+        font-size: .65rem;
     }
+
 }
