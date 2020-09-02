@@ -6,6 +6,9 @@
     <td>
       <img src="/README_images/main.png">
     </td>
+    <td>
+    <img src="/README_images/mobile3.png">
+    </td>
    </tr>
   <tr>
     <td>
