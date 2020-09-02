@@ -28,8 +28,6 @@
    </tr>
 </table>
 
-<img src=">
-
 <h3>About This Project</h3>
 <p>This is a HTML/CSS clone of Newsweek I made for the HTML/CSS course on <a href="https://www.theodinproject.com/">Odin Project</a>. The main focus was 
 re-creating the site using the Bootstrap framework. The images are hardcoded in since I was focusing on working with the layout aspect and not using
