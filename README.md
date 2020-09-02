@@ -39,10 +39,12 @@ Javascript or databases.
 
 <h3>Technical Sheet</h3>
 
+<strong>
 <ul>
   <li>HTML 5</li>
   <li>CSS 3 - Grid & Flexbox</li>
   <li>SASS</li>
   <li>Bootrap 4</li>
 </ul>
+</strong>
 
